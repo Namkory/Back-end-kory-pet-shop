@@ -19,6 +19,7 @@ const handleGetAllProduct = (categoryId) => {
                     'base64',
                 ).toString('binary');
                 }
+                
               })
              
             }
@@ -78,7 +79,6 @@ const createProducts = (data) => {
                 errMessage: "Your product is exist",
               });
           }else{
-    
             await db.Product.create({
                 categoryId: data.categoryId,
                 title: data.title,

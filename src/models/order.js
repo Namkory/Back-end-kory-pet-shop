@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Order.hasOne(models.OrderDetail, {foreignKey: 'orderId'})
     }
   }
   Order.init({

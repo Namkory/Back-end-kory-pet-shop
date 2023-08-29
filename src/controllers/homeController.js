@@ -58,6 +58,7 @@ const deleteProduct = async (req, res) => {
     
     return res.status(200).json(response)
 }
+
 const getDetailProduct = async (req, res) => {
     if(!req.query.id) {
         
@@ -77,5 +78,5 @@ module.exports = {
     getAllProduct,
     deleteProduct,
     updateProduct,
-    getDetailProduct
+    getDetailProduct,
 }
